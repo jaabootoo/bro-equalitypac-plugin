@@ -1,0 +1,20 @@
+/* 
+Custom Changes for Meet My Team Plugin 
+
+Contained in 'add-to-css-stylesheet.css' in GitHub
+06.21.14 Joshua Bruce
+*/
+.mmt_bio_picture {
+	float: right;
+}
+
+#mmt_jb_member_name {
+	clear: none;
+}
+
+#mmt_jb_member_designation {
+	clear: none;
+	margin: 12px 0;
+}
+
+/* End Custom Changes */
