@@ -220,7 +220,7 @@ class Meet_My_Team_Shortcodes {
 		// Build the initial display
 		$display = '<'.$this->item_container.' data-reveal-id="mmt_member_'.$details['id'].'" class="mmt '.$this->item_container_class.'">';
 			if( $this->display_picture == 'true' ){
-				$display .= '<div class="mmt_bio_picture"><img src="'.$details['bio_picture'].'" alt="'.$details['name'].'" ></div>';
+				$display .= '<div class="mmt_member_pic"><img src="'.$details['bio_picture'].'" alt="'.$details['name'].'" ></div>';
 			}
 			$display .= '<h4>'.$details['name'].'</h3>';
 			$display .= '<h6>'.$details['designation'].'</h4>';

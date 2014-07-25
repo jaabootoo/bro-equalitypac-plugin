@@ -8,6 +8,14 @@ Contained in 'add-to-css-stylesheet.css' in GitHub
 	float: right;
 }
 
+.mmt_member_pic {
+	max-width: 290px;
+}
+
+.mmt_member_pic img {
+	width: 100%;
+}
+
 #mmt_jb_member_name {
 	clear: none;
 }
