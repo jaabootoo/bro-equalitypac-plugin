@@ -152,7 +152,9 @@ class Meet_My_Team_Shortcodes {
 				}
 
 			}
-
+		if( $index%( $this->cols ) != ($this->cols-1) ){
+			$mmt .= '</div><!-- '.$this->row_container_class.' -->';
+		}
 		$mmt .= "</".$this->parent_container.">";
 
 		return $mmt;
@@ -222,8 +224,8 @@ class Meet_My_Team_Shortcodes {
 			if( $this->display_picture == 'true' ){
 				$display .= '<div class="mmt_member_pic"><img src="'.$details['bio_picture'].'" alt="'.$details['name'].'" ></div>';
 			}
-			$display .= '<h4>'.$details['name'].'</h3>';
-			$display .= '<h6>'.$details['designation'].'</h4>';
+			$display .= '<h4>'.$details['name'].'</h4>';
+			$display .= '<h6>'.$details['designation'].'</h6>';
 		$display .= '</'.$this->item_container.'>';
 
 		return $modal.$display;
