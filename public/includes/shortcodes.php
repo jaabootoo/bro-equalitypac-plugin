@@ -224,8 +224,12 @@ class Meet_My_Team_Shortcodes {
 			if( $this->display_picture == 'true' ){
 				$display .= '<div class="mmt_member_pic"><img src="'.$details['bio_picture'].'" alt="'.$details['name'].'" ></div>';
 			}
-			$display .= '<h4>'.$details['name'].'</h4>';
-			$display .= '<h6>'.$details['designation'].'</h6>';
+			$display .= '<p style="font-size: 18px; font-weight: bold;">'.$details['name'].'</p>';
+			$display .= '<p style="font-size: 14px; font-weight: bold; line-height: 90%">'.$details['designation'].'</p>';
+
+			if( $details['dist_descrip'] != '' ){
+				$display .= '<p style="font-size: 14px; font-weight: bold;">'.$details['dist_descrip'].'</p>';
+			}
 		$display .= '</'.$this->item_container.'>';
 
 		return $modal.$display;
