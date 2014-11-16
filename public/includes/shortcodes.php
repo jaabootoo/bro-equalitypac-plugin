@@ -143,6 +143,7 @@ class Meet_My_Team_Shortcodes {
 				$member_details['biography']	=	wpautop( get_post_meta( $member->ID, 'mmt_biography', true ) );
 				$member_details['personal_url']	=	get_post_meta( $member->ID, 'mmt_url', true );
 				$member_details['dist_descrip']	=	get_post_meta( $member->ID, 'mmt_ddescript', true );
+				$member_details['won_race']	    =	get_post_meta( $member->ID, 'mmt_wonrace', true );
 
 
 				$mmt .= $this->build_single_member( $member_details );
@@ -224,7 +225,11 @@ class Meet_My_Team_Shortcodes {
 			if( $this->display_picture == 'true' ){
 				$display .= '<div class="mmt_member_pic"><img src="'.$details['bio_picture'].'" alt="'.$details['name'].'" ></div>';
 			}
-			$display .= '<p style="font-size: 18px; font-weight: bold;">'.$details['name'].'</p>';
+			$display .= '<p style="font-size: 18px; font-weight: bold;">'.$details['name'];
+			if ($details['won_race'] == 'on') {
+				$display .= '<img src="http://www.basicrights.org/wp-content/uploads/2014/11/Winner_Small.png" height="18" width="18" style="border: 0px; padding: 0px;">';
+			}
+			$display .= '</p>';
 			$display .= '<p style="font-size: 14px; font-weight: bold; line-height: 90%">'.$details['designation'].'</p>';
 
 			if( $details['dist_descrip'] != '' ){
@@ -234,7 +239,5 @@ class Meet_My_Team_Shortcodes {
 
 		return $modal.$display;
 	}
-
-	
 
 }

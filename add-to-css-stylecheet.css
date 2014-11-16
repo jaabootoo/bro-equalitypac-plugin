@@ -12,6 +12,11 @@ Contained in 'add-to-css-stylesheet.css' in GitHub
 	max-width: 290px;
 }
 
+.mmt_member_winner {
+	max-width: 290px;
+	background: transparent;
+}
+
 .mmt_member_pic img {
 	width: 100%;
 }
