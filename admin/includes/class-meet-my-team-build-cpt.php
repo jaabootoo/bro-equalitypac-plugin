@@ -169,6 +169,15 @@ class Meet_My_Team_Build_Cpt {
 	                'type' 	=> 'text',
 	                'options' => array(),
 	            ),
+
+	            /* Won Race */
+	            array(
+	                'name' 	=> 'Won Race',
+	                'desc' 	=> 'Won Race',
+	                'id'	=> $prefix . 'wonrace',
+	                'type' 	=> 'checkbox',
+	                'options' => array(),
+	            ),
 	        ),
 	    );
 

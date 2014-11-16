@@ -213,7 +213,7 @@ class Meet_My_Team_Shortcodes {
 		$modal .=	'<div>'.$details['biography'].'</div>';
 		
 		if( $details['personal_url'] != '' ){				
-			$modal .= '<a href="'.$details['personal_url'].'" target="_blank">'.$details['personal_url'].'</a>';
+			$modal .= '<strong>Website:</strong>&nbsp;<a href="'.$details['personal_url'].'" target="_blank">'.$details['personal_url'].'</a>';
 		}
 
 		$modal .= '		<a class="close-reveal-modal">&#215;</a>
